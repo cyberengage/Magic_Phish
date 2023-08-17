@@ -20,22 +20,31 @@ Ensure you have the following before you proceed:
 
 # Usage
 #### Clone this repository:
+```
 git clone https://github.com/cyberengage/Magic_Phish.git
+```
 
 #### Navigate to the project directory:
+```
 cd magic_phish
+```
+* Edit the script variables at the top of each script to include your Linux Username, Domain, Vultr API key, and Email ID.
 
-* Edit the script vavriables at the top of each script to include your Linux username, domain, Vultr API key, and email ID.
-
-#### Run the Script1.sh WITHOUT sudo privilieges user:
-bash Sript1.sh
+#### Run the Script1.sh as user WITHOUT sudo privilieges:
+```
+bash Script1.sh
+```
 
 #### Run the Script2.sh WITH sudo privileges:
-sudo bash Sript2.sh
-
+```
+sudo bash Script2.sh
+```
 #### After execution, run Gophish with the following commands:
+```
 cd /opt/gophish
+
 sudo ./gophish &
+```
 
 # Acknowledgments
  - GoPhish: This project utilizes GoPhish, an open-source phishing toolkit. 
