@@ -137,7 +137,7 @@ sudo ufw allow 80
 Email=$EmailID\@$Domain
 
 #-------------- GET DOMAIN CERTIFICATES
-
+sleep 3m
 sudo certbot certonly --standalone --non-interactive --agree-tos -m $Email -d $Domain -v
 
 #-------------- CONFIGURE GOPHISH
