@@ -14,9 +14,7 @@ EmailID="{YOUR_EMAIL_SENDER_HERE}"
 #-----------------------
 export VULTR_API_KEY=$VultrAPI
 Public_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
-#-----------------------
-sudo apt update -y
-sudo apt upgrade -y
+
 #-----------------------POSTFIX SETUP AND CONFIG
 
 sudo DEBIAN_PRIORITY=low DEBIAN_FRONTEND=noninteractive apt install postfix -y
