@@ -13,9 +13,10 @@ Magic_Phish is a script to set up a Postfix mailserver, configure domain DNS, an
 # Prerequisites
 Ensure you have the following before you proceed:
 
- - A domain ready for setup, with the nameservers set to Vultr nameservers.
- - Linux user with sudo privileges.
- - Vultr account to deploy the VPS, with Vultr API key (this must be enabled on your account). 
+ - A domain you own, with the nameservers set to Vultr nameservers (ns1.vultr.com & ns2.vultr.com).
+ - A Vultr Ubuntu 22.04 x64 VPS instance.
+ - Non root linux user with sudo privileges.
+ - Vultr API key (this must be enabled on your Vultr account). 
 
 # Usage
 #### Clone this repository:
