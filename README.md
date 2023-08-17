@@ -31,7 +31,7 @@ cd magic_phish
 bash Sript1.sh
 
 #### Run the Script2.sh WITH sudo privileges:
-bash Sript1.sh
+sudo bash Sript2.sh
 
 #### After execution, run Gophish with the following commands:
 cd /opt/gophish
