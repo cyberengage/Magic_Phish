@@ -28,7 +28,7 @@ git clone https://github.com/cyberengage/Magic_Phish.git
 
 #### Navigate to the project directory:
 ```
-cd magic_phish
+cd Magic_Phish
 ```
 * Edit the script variables at the top of each script to include your Linux Username, Domain, Vultr API key, and Email ID.
 
