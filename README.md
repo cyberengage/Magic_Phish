@@ -18,7 +18,10 @@ Ensure you have the following before you proceed:
  - A domain you own, with the nameservers set to Vultr nameservers (ns1.vultr.com & ns2.vultr.com).
  - A Vultr Ubuntu 22.04 x64 VPS instance - server name MUST be your domain name.
  - Non root linux user with sudo privileges.
- - Vultr API key (this must be enabled on your Vultr account). 
+ - Vultr API key (this must be enabled on your Vultr account).
+ - Run Update & Upgrade:
+   - ``` sudo apt update ```
+   - ``` sudo apt upgrade ```
 
 # Usage
 #### Clone this repository:
