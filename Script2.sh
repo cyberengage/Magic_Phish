@@ -137,7 +137,17 @@ sudo ufw allow 80
 Email=$EmailID\@$Domain
 
 #-------------- GET DOMAIN CERTIFICATES
-sleep 5m
+echo "Check SPF Records are validating before you continue."
+echo "You can check this at https://dmarcly.com/tools/spf-record-checker"
+user_input=""
+
+while [[ $user_input != "valid" ]]; do
+    echo "Check SPF Records are validating"
+    echo "Once they validate enter 'valid' to continue..."
+    read user_input
+done
+
+echo "You entered the correct word. Continuing..."
 sudo certbot certonly --standalone --non-interactive --agree-tos -m $Email -d $Domain -v
 
 #-------------- CONFIGURE GOPHISH
