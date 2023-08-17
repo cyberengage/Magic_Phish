@@ -2,6 +2,8 @@
 
 Magic_Phish is a script to set up a Postfix mailserver, configure domain DNS, and establish a phishing simulation server. Additionally, it handles TLS certificates for both emails and landing pages.
 
+This is designed as a learning resource and is not advised for production deployment. Use at your own risk.
+
 # Features
  - Set up and configure Postfix for mailing services.
  - SPF and DKIM record configuration for domain validation.
