@@ -30,7 +30,31 @@ git clone https://github.com/cyberengage/Magic_Phish.git
 ```
 cd Magic_Phish
 ```
-* Edit the script variables at the top of each script to include your Linux Username, Domain, Vultr API key, and Email ID.
+#### Edit the script variables at the top of each script to include your Linux Username, Domain, Vultr API key, and Email ID.
+
+#### Edit Script1.sh:
+```
+sudo nano Script1.sh
+```
+Change the following line
+ - User="{YOUR_LINUX_USERNAME_HERE}"
+
+Save your changes
+
+#### Edit Script2.sh:
+```
+sudo nano Script2.sh
+```
+Change the following lines
+
+ - User="{YOUR_LINUX_USERNAME_HERE}"
+ - Domain="{YOUR_DOMAIN_HERE}"
+ - VultrAPI="{YOUR_VULTR_API_KEY_HERE}"
+   - To enable API Key https://my.vultr.com/settings/#settingsapi
+ - EmailID="{YOUR_EMAIL_SENDER_HERE}"
+   - For EmailID, you would enter "admin" if you want your email to be sent from "admin@example.com"
+
+Save your changes
 
 #### Run the Script1.sh as user WITHOUT sudo privilieges:
 ```
@@ -47,6 +71,11 @@ cd /opt/gophish
 
 sudo ./gophish &
 ```
+
+Your initial password for GoPhish user will be shown in the command line output when you first run GoPhish. 
+
+The default user is 'admin'.
+
 
 # Acknowledgments
  - GoPhish: This project utilizes GoPhish, an open-source phishing toolkit. 
